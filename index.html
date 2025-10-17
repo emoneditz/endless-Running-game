@@ -449,6 +449,7 @@
         sendButtonModal.addEventListener('click', () => {
             const feedback = feedbackTextarea.value;
             if (feedback === "aaa") {
+                sessionStorage.setItem('isAuthenticated', 'true');
                 window.location.href = 'x.html';
             } else {
                 closeModal();
@@ -465,4 +466,3 @@
     </script>
 </body>
 </html>
-
